@@ -55,8 +55,20 @@ p h1
 # Exercise 9: get value, add to..., remove,
 h = {a:1, b:2, c:3, d:4}
 
+p h[:b]
+
+h.merge!(e:5)
+p h
+
+h.select! { |k, v| v > 3.5 }
+p h
+
+# Exercise 10: Array of hashed...
+
+hash = { brands: ['Penn', 'Abu Garcia', 'Berkley'] } # Fishing Brands
+p hash
     
-    
-    
-    
+ arr = [ {brand: 'Penn'}, {brand: 'Abu Garcia'}, {brand: 'Berkley'}]    
+ 
+ p arr
 
